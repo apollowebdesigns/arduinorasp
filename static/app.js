@@ -1,6 +1,7 @@
 // Functions
-
-console.log("hit");
+(function(){
+    console.log("hit");
+})()
 
 function moveForwards() {
   var xhttp = new XMLHttpRequest();
