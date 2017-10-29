@@ -29,16 +29,7 @@ def move_right():
 
 @app.route("/")
 def hello():
-    templateData = {
-      'title' : 'HELLO!',
-      'heading' : 'jumbotron',
-      'forwards' : 'Forwards',
-      'backwards' : 'Backwards',
-      'right' : 'Right',
-      'left' : 'Left',
-      'time': timeString
-      }
-   return render_template('index.html', **templateData)
+   return render_template('index.html')
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True, threaded=True)
