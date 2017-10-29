@@ -1,5 +1,7 @@
 // Functions
 
+console.log("hit");
+
 function moveForwards() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
