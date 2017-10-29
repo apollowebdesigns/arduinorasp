@@ -27,5 +27,9 @@ def move_left():
 def move_right():
     return right.move()
 
+@app.route("/")
+def hello():
+   return render_template('index.html', **templateData)
+
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True, threaded=True)
