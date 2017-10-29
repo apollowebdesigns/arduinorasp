@@ -6,7 +6,7 @@ from time import sleep
 from flask_cors import CORS, cross_origin
 import forwards
 import backwards
-import right
+import left
 app = Flask(__name__)
 CORS(app)
 
@@ -18,9 +18,9 @@ def move_forwards():
 def move_backwards():
     return backwards.move()
 
-@app.route('/right', methods=['GET'])
-def move_right():
-    return right.move()
+@app.route('/left', methods=['GET'])
+def move_left():
+    return left.move()
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True, threaded=True)
