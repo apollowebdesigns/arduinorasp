@@ -14,7 +14,7 @@ def move_forwards():
     return forwards.move()
 
 @app.route('/backwards', methods=['GET'])
-def move_forwards():
+def move_backwards():
     return backwards.move()
 
 if __name__ == "__main__":
