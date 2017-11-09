@@ -13,3 +13,14 @@ function moveForwards() {
   xhttp.open("GET", "/forwards", true);
   xhttp.send();
 }
+
+function moveBackwards() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("fowardsResponse").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "/backwards", true);
+  xhttp.send();
+}
